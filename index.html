@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Art of Cheryl Bailey</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class ="navbar-brand" href="index.html">
+				<img src="img/Logo.png">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class ="navbar-nav ml-auto">
+					<li class="nav-item active"> <a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"> <a class="nav-link" href="3">About Me</a></li>
+					<li class="nav-item"> <a class="nav-link" href="Gallery.php">Gallery</a></li>
+					<li class="nav-item"> <a class="nav-link" href="3">Contact Me</a></li>
+				</ul>				
+			</div>
+		</div>
+	</nav>
+
+	<!-- Painting Slider -->
+
+	<div id="slides" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+			<li data-target="#slides" data-slide-to="3"></li>
+			<li data-target="#slides" data-slide-to="4"></li>
+			<li data-target="#slides" data-slide-to="5"></li>
+		</ol>
+		
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/paintings/fireflies-cheryl-bailey.jpg">
+				<div class="carousel-caption">
+					<form id='fireflies' action = 'Display.php' method='post'>
+						<input type='hidden' name='painting' value='Fireflies'>
+					</form>
+					<h1 class="display-4">Fireflies</h1>
+					<button type="submit" form = 'fireflies' class="btn-outline-light btn-md">Take a closer look</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/paintings/in-meditation-cheryl-bailey.jpg">
+				<div class="carousel-caption">
+					<form id='med' action = 'Display.php' method='post'>
+						<input type='hidden' name='painting' value='In Meditation'>
+					</form>
+					<h1 class="display-4">In Meditation</h1>
+					<button type="submit" form = 'med' class="btn-outline-light btn-md">Take a closer look</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/paintings/moon-showers-cheryl-bailey.jpg">
+				<div class="carousel-caption">
+					<form id='moon' action = 'Display.php' method='post'>
+						<input type='hidden' name='painting' value='Moon Showers'>
+					</form>
+					<h1 class="display-4">Moon Showers</h1>
+					<button type="submit" form = 'moon' class="btn-outline-light btn-md">Take a closer look</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/paintings/winter-magic-cheryl-bailey.jpg">
+				<div class="carousel-caption">
+					<form id='winter' action = 'Display.php' method='post'>
+						<input type='hidden' name='painting' value='Winter Magic'>
+					</form>
+					<h1 class="display-4">Winter Magic</h1>
+					<button type="submit" form = 'winter' class="btn-outline-light btn-md">Take a closer look</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/paintings/nesting-cheryl-bailey.jpg">
+				<div class="carousel-caption">
+					<form id='nest' action = 'Display.php' method='post'>
+						<input type='hidden' name='painting' value='Nesting'>
+					</form>
+					<h1 class="display-4">Nesting</h1>
+					<button type="sumbit" form='nest' class="btn-outline-light btn-md">Take a closer look</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/paintings/driftwood-art-sandpiper-cheryl-bailey.jpg">
+				<div class="carousel-caption">
+					<form id='sand' action = 'Display.php' method='post'>
+						<input type='hidden' name='painting' value='Sandpiper'>
+					</form>
+					<h1 class="display-4">Driftwood Sandpiper</h1>
+					<button type="sumbit" form='sand' class="btn-outline-light btn-md">Take a closer look</button>
+				</div>
+			</div>
+		</div>
+
+		<a class="carousel-control-prev" href="#slides" role="button" data-slide="prev" id="navbut">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#slides" role="button" data-slide="next" id="navbut">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+
+	<!--Check out the gallery -->
+	<div class ="contaier-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p class="lead">This would be a link that goes straight to your gallery in case they decide they want to see if after looking at some of the rotating art. So I might say something inviting them to check it out.</p>	
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+				<a href="Gallery.php"><button type="button" class="btn btn-outline-secondary btn-lg">Visit the Gallery</button></a>				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<!-- My name is section -->
+
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">My name is Cheryl Bailey</h1>					
+			</div>
+			<hr>
+				<div class="col-12">
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<hr class="my-4">
+
+	<!-- Transition slide -->
+
+	<figure>
+		<div class="fixed-wrap">
+			<div id="anchored">
+			</div>
+		</div>
+	</figure>
+
+	<!-- picture of you and text -->
+
+	<div class ="container-fluid padding2">
+		<div class= "row padding">
+			<div class = "col-lg-6">
+				<img src="img/profile3.jpg" class="img-fluid">
+			</div>
+			<div class = "col-lg-6">
+				<h2 class="display-4">Thanks for taking a look at my art</h2>
+				<p>
+					Here you could probably go into more detail about yourself and the way making art has affected your life, or what it means to you, or whatever you want really lol. You might notice that I also included a tab on the Navigation bar at the top of the screen to go to an about me page which I havnt done, but that may be overkill if you feel this section is enough space to say what you want to say.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer>
+		<div class= "container-fluid padding">
+			<div class = "row text-center">
+				<div class="col-md-4">
+					<hr class="light">
+					<img src="img/Mom's_Logo_white.png" height="20px">
+					<hr class="light">
+					<p class="text-light">777-777-7777</p>
+					<p class="text-light">email@email.com</p>
+					<p class="text-light">Alicante, Valencia Province</p>
+					<p class="text-light">Spain</p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5 class="text-light">Social Media</h5>
+					<hr class="light">
+					<p><a href="https://www.facebook.com/cheryl.bailey.5621" class="text-light">Facebook</a></p>
+					<p><a href="https://fineartamerica.com/profiles/soulinspirations?fbclid=IwAR16Px_36wOXssRBl6XD3o1FXkBtMZSt1i3uB8srl_3kjyJ4f4hLAdLuWFU" class="text-light">fine art america</a></p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5 class="text-light">Navigate</h5>
+					<hr class="light">
+					<p><a href="index.html" class="text-light">Home</a></p>
+					<p><a href="About.html" class="text-light">About Me</a></p>
+					<p><a href="Gallery.php" class="text-light">Gallery</a></p>
+					<p><a href="Contact.html" class="text-light">Contact Me</a></p>
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5><a class="text-light" href="Add.php">&copy; cherylbaileyart.com</a></h5>					
+				</div>
+			</div>
+		</div>
+
+	</footer>
+</body>
+</html>
